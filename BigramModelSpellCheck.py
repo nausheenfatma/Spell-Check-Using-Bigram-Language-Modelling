@@ -9,7 +9,7 @@ from indic_tokenizer import tokenizer
 
 class BigramModelSpellCheck:
 	def __init__(self):
-		self.raw_file="hindi_5lac_tokenised.txt" # "test_tokenised"   file containing tokenised words,sentence seperator='$$$'
+		self.raw_file="corpus_tokenised.txt" # "test_tokenised"   file containing tokenised words,sentence seperator='$$$'
 		self.bigrams={}
 		self.unigrams={}
   
