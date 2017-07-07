@@ -177,10 +177,15 @@ class BigramModelSpellCheck:
 
 def main():
 	bm=BigramModelSpellCheck()
+	
+	################Builds the Bigram Language Model############################################
 	bm.make_bigrams()
 	bm.save_grams("bigrams.txt",bm.bigrams)		#optional step,just for viewing the bigrams
 	bm.make_unigrams()
 	bm.save_grams("unigrams.txt",bm.unigrams)	#optional step,just for viewing the unigrams
+	
+	
+	################Test on an input sentence, given the index/position of the word in the sentence############################################
 	# bm.find_bigram_likelihood("तीन_फीसदी")
  
 
